@@ -1,0 +1,52 @@
+openapi: 3.0.0
+
+info:
+  title: Hello World
+  description: what's your name? speak to!
+  termsOfService: https://policies.google.com/terms?hl=ja&gl=JP
+  contact:
+    name: Cloud Ace Technical Blog
+    url: https://www.apps-gcp.com/
+    email: test@apps-gcp.com
+  license:
+    name: license by Open Source Initiative
+    url: https://opensource.jp/osd/osd-japanese.html
+  version: '1.0'
+servers:
+  - url: 'https://us-central1-{projectName}.cloudfunctions.net' © ©•ª‚ª\’z‚µ‚½ŠÂ‹«‚Ì‚à‚Ì‚ÉC³A‰º‚ÌServer•Ï”‚Íg‚¢•û‚Ì—á‚Æ‚µ‚Ä“ü‚ê‚½‚à‚Ì‚È‚Ì‚ÅÁ‚µ‚Ä‚àOK
+    description: Step1, call API
+    variables:
+      projectName:
+        enum:
+          - ca-iwans-test
+          - google-test
+        default: ca-iwans-test
+        description: set project
+paths:
+  /Hello-OpenAPI:
+    summary: Hello, XXXX?
+    description: this api, combine to Hello world and parameter text
+    get:
+      summary: return combine text
+      description: Hello, + parameter.text + ?
+      externalDocs:
+        url: https://www.apps-gcp.com/openapi_understanding_dissection/
+        description: previous post
+      operationId: combineText
+      parameters:
+        - name: inputText
+          in: query
+          description: user input
+          required: false
+          deprecated: true
+          allowEmptyValue: true
+          schema:
+            type: string
+      responses:
+        default:
+          description: return to api response
+          content:
+            text/plain:
+              schema:
+                type: string
+      deprecated: false
