@@ -1,2 +1,2 @@
-# Swagger UIをホスティング中
+# Swagger UI繧偵�帙せ繝�繧｣繝ｳ繧ｰ荳ｭ
 https://cocet33000.github.io/github_pages_test/dist/index.html
