@@ -1,4 +1,4 @@
-openapi: 3.0.0
+openapi: '3.0.0'
 
 info:
   title: Hello World
@@ -13,7 +13,7 @@ info:
     url: https://opensource.jp/osd/osd-japanese.html
   version: '1.0'
 servers:
-  - url: 'https://us-central1-{projectName}.cloudfunctions.net' © ©•ª‚ª\’z‚µ‚½ŠÂ‹«‚Ì‚à‚Ì‚ÉC³A‰º‚ÌServer•Ï”‚Íg‚¢•û‚Ì—á‚Æ‚µ‚Ä“ü‚ê‚½‚à‚Ì‚È‚Ì‚ÅÁ‚µ‚Ä‚àOK
+  - url: 'https://us-central1-{projectName}'
     description: Step1, call API
     variables:
       projectName:
